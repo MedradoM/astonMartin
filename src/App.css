@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+/*--------------------------------Start--------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*--------------------------------Header--------------------------------*/
+
+header{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    color: white;
+    z-index: 999px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#header{
+    background-color: rgba(10, 10, 10, 0);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header.changeStyle {
+    background-color: rgba(10, 10, 10, 0.5);
+}
+
+.Ancora{
+    padding-bottom: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.searchbar img{
+    width: 150px;
+}
+
+.Ancora ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.Ancora li{
+    border-bottom: 10px;
+    border-color: red;
+}
+
+.Ancora a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px 10px 50px;
+}
+
+.Ancora a:hover{
+    text-decoration: underline yellowgreen 2px;
+}
+
+.bg-img img{
+    width: 100%;
+}
+
+.bg-img {
+    padding-bottom: 0;
+}
+
+/*--------------------------------Main--------------------------------*/
+
+
+
+.Qs-container h1{
+    text-align: center;
+    padding: 50px;
+    color: rgba(10, 10, 10, 0.5);
+
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+/*@keyframes slidein{
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}*/
+
+.QS-hist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.QS-hist img{
+    height: 450px;
+}
+
+.QS-hist-container{
+    padding: 60px;
+    color: black;
+}
+
+.Qs-container h2{
+    font-size: 50px;
+}
+
+.QS-hist-container p{
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.QS-f1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00685F;
+}
+
+.QS-f1 img{
+    width: 800px;
+    padding: 50px 0px 100px;
+}
+
+.QS-f1-inicio h2{
+    font-size: 20px;
+}
+
+.QS-f1-inicio{
+    color: yellowgreen;
+    
+}
+
+.QS-f1-inicio p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.QS-retorno{
+    text-align: center;
+}
+
+.QS-retorno-f1{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+/*--------------------------------Bottom--------------------------------*/
+
+.Bottom{
+  padding: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contato ul{
+    display: flex;
+    list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contato li{
+    padding: 10px;
 }
+
+.contato img{
+    width: 40px;   
+}
+
+.contato a{
+    color: #00685F;
+}
+
+.info-text{
+    padding-left: 20%;
+}
+
+/*--------------------------------End--------------------------------*/
